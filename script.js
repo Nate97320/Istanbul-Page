@@ -1,5 +1,5 @@
 const helloIstanbulSection = document.getElementById('hello-istanbul');
-const imgAuthorLink = helloSeoulSection.querySelector('.photo-author');
+// const imgAuthorLink = helloSeoulSection.querySelector('.photo-author');
 const imgAnchors = document.getElementById('peek').querySelectorAll('a');
 const peekImgs = document.getElementById('peek').querySelectorAll('img');
 const eventTitle = document.getElementById('event').querySelector('h1');
@@ -23,10 +23,10 @@ const applyTheme = () => {
   document.documentElement.setAttribute('data-theme', theme);
   toggleSwitchIcon.className = theme === DARK_THEME? 'fas fa-moon' : 'fas fa-sun';
 
-  // hello seoul section
-  imgAuthorLink.textContent = `author by ${src.background.author}`;
-  imgAuthorLink.setAttribute('href', src.background.link);
-  helloSeoulSection.style.backgroundImage = `url('assets/img/background_${theme}.jpg')`;
+  // hello istanbul section
+  // imgAuthorLink.textContent = `author by ${src.background.author}`;
+  // imgAuthorLink.setAttribute('href', src.background.link);
+  helloIstanbulSection.style.backgroundImage = `url('assets/img/background_${theme}.jpg')`;
 
   //peek section
   for (let i = 0; i < 3; i++) {
